@@ -124,6 +124,7 @@ namespace Colin.WebServerFinder
 
                 Find(queue, are);
                 are.WaitOne();
+                are.Dispose();
                 return _result;
             });
         }
